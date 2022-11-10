@@ -8,5 +8,9 @@ public class DllApplication {
     public static void main(String[] args) {
         SpringApplication.run(DllApplication.class, args);
     }
+ dao.createTournamentTable();
+
+       logger.info("French Players: {}", dao.getPlayerByNationality("France") );
+
 
 }
